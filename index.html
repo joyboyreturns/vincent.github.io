@@ -33,10 +33,15 @@
       <div class="container">
         <h2>Latest Tech News</h2>
         <div class="posts">
-          <!-- Repeat for each post -->
-          
-          <!-- Add more <article class="post"> as needed -->
-        </div>
+    {% for post in site.posts %}
+      <article class="post">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+      </article>
+    {% endfor %}
+  </div>
       </div>
     </section>
 
