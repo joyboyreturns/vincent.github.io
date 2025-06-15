@@ -19,7 +19,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Plugins (if you want feeds & sitemap)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
