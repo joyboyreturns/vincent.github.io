@@ -1,23 +1,30 @@
-# Basic site info
-name: Vincent's Blog
-description: Cybersecurity & Tech Insights
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# Site Settings
+name: "Vincent's Blog"
+description: "Cybersecurity & Tech Insights"
+avatar: "https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png"
 
-# Important config settings
-baseurl: ""  # Blank for user/organization GitHub Pages
+# URL & Baseurl
 url: "https://joyboyreturns.github.io"
+baseurl: ""   # leave empty for a user/org page
+
+# Permalink format for posts
 permalink: /:year/:month/:day/:title.html
 
-# Footer & social links (customize if you want)
+# Footer & Social Links
 footer-links:
-  github: joyboyreturns/vincent.github.io
+  github: "joyboyreturns/vincent.github.io"
 
-# Markdown & plugins (if present)
+# Markdown & Syntax Highlighting
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Exclude these files from site build
+# Plugins (if you want feeds & sitemap)
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Files to exclude from the build
 exclude:
   - Gemfile
   - Gemfile.lock
