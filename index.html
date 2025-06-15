@@ -1,18 +1,27 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CodeBeacon – Tech News Daily</title>
+    <style>
+      body { font-family: sans-serif; padding: 40px; background: #f9f9f9; }
+      h1 { color: #333; }
+      .hero { background: #111; color: #fff; padding: 30px; border-radius: 8px; }
+      .content { margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Welcome to CodeBeacon 🚀</h1>
+      <p>Your trusted source for the latest in tech, gadgets, AI, and cybersecurity.</p>
+    </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <div class="content">
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="/posts/2025-06-16-ai-revolution.html">AI Revolution in 2025</a></li>
+        <li><a href="/posts/2025-06-15-gadget-leaks.html">Top 5 Gadget Leaks This Month</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
