@@ -20,7 +20,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Plugins (if you want feeds & sitemap)
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
 
