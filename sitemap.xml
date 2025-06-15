@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://joyboyreturns.github.io/</loc></url>
-  <url><loc>https://joyboyreturns.github.io/2025/06/16/android-16-release-for-google-pixel.html</loc></url>
-  <!-- Add more posts as needed -->
+  <url>
+    <loc>https://joyboyreturns.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://joyboyreturns.github.io/2025/06/16/android-16-release-for-google-pixel.html</loc>
+  </url>
 </urlset>
