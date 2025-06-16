@@ -3,9 +3,49 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: "%B %d, %Y" }}</p>
+  <nav class="breadcrumb">
+    <a href="{{ "/" | relative_url }}">← Back to Home</a>
+  </nav>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      <span>By Vincent</span> &middot; 
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </p>
+    <!-- SEO Meta for posts -->
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="https://codebeacon.info/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="twitter:image" content="https://codebeacon.info/social-preview.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+        "author": { "@type": "Person", "name": "Vincent" },
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "url": "{{ page.url | absolute_url }}"
+      }
+    </script>
+  </header>
+
   <div class="content">
     {{ content }}
+  </div>
+  
+  <div class="post-footer">
+    <div class="social-share">
+      <span>Share:</span>
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener">Twitter</a> |
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener">Facebook</a> |
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </article>
