@@ -9,9 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeBeacon – Tech News & Insights</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Inline Styles for Search -->
+  <!-- Inline Styles for Header Layout & Search -->
   <style>
-    header .container { position: relative; }
+    header .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header .logo {
+      position: absolute;
+      left: 20px;
+    }
+    nav {
+      /* Center nav by flex container */
+    }
     .search-container {
       position: absolute;
       top: 50%;
@@ -154,11 +166,7 @@
       var posts = document.querySelectorAll('.post');
       posts.forEach(function(post) {
         var title = post.querySelector('.post-title').innerText.toLowerCase();
-        if (title.indexOf(filter) > -1) {
-          post.style.display = '';
-        } else {
-          post.style.display = 'none';
-        }
+        post.style.display = (title.indexOf(filter) > -1) ? '' : 'none';
       });
     }
   </script>
@@ -171,4 +179,3 @@
   </footer>
 </body>
 </html>
-
