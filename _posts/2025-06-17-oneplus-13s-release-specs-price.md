@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OnePlus 13 s Release Date, Price & Full Specs — The Compact Flagship Reloaded"
-date: 2025-06-17 10:00:00 +0530
+date: 2025-06-17 00:00:00 +0530
 categories: [Smartphones, OnePlus, OnePlus 13s]
 description: "Everything about the OnePlus 13 s: launch timeline, Snapdragon 8 Elite power, Plus Key AI tricks, camera upgrades, battery life, and first-hand impressions."
 meta_description: "OnePlus 13 s launch date, price, specs, Plus Key AI button, Snapdragon 8 Elite, 6 260 mAh battery, Hasselblad camera, OxygenOS 15 — complete guide."
