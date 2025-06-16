@@ -9,7 +9,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeBeacon – Tech News & Insights</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Inline Styles for Search -->
+  <style>
+    header .container { position: relative; }
+    .search-container {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    .search-container input {
+      padding: 6px 12px;
+      width: 200px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      outline: none;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    .search-container input:focus {
+      border-color: #00c896;
+      box-shadow: 0 0 8px rgba(0,200,150,0.4);
+    }
+  </style>
+
+
   <!-- SEO Meta Tags -->
+
+
   <meta name="description" content="CodeBeacon: Latest tech news, AI, gadgets, cybersecurity & digital insights. Stay ahead with daily updates and expert opinions.">
   <meta name="keywords" content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
   <meta name="author" content="Vincent">
@@ -54,6 +81,10 @@
         <a href="#news">News</a>
         <a href="#about">About</a>
       </nav>
+      <!-- Search Container Top Right -->
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search posts..." onkeyup="filterPosts()">
+      </div>
     </div>
   </header>
 
@@ -71,10 +102,6 @@
     <section id="news" class="news-section">
       <div class="container">
         <h2>Latest Tech News</h2>
-        <!-- Search Bar -->
-        <div class="search-bar">
-          <input type="text" id="search-input" placeholder="Search posts by title..." onkeyup="filterPosts()">
-        </div>
         <div class="posts">
           {% for post in paginator.posts %}
             <article class="post">
@@ -144,3 +171,4 @@
   </footer>
 </body>
 </html>
+
