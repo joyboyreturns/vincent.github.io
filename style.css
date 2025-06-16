@@ -6,7 +6,11 @@
   --shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
@@ -153,6 +157,7 @@ nav a:hover {
   color: var(--primary);
   margin-bottom: 15px;
 }
+
 footer {
   margin-top: 36px;
   padding: 22px 0;
@@ -164,19 +169,34 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .container { width: 97%; }
-  .posts { gap: 15px; }
-  .post, .about-section { padding: 18px 7px; }
-  header .container { flex-direction: column; align-items: flex-start; }
-  nav { margin-top: 10px; }
-  .hero { padding: 32px 0 14px 0; }
-  .news-section, .about-section { padding-top: 23px; }
+  .container {
+    width: 97%;
+  }
+  .posts {
+    gap: 15px;
+  }
+  .post,
+  .about-section {
+    padding: 18px 7px;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  .hero {
+    padding: 32px 0 14px 0;
+  }
+  .news-section,
+  .about-section {
+    padding-top: 23px;
+  }
 }
 
-/* --- Your existing CSS here --- */
-
-/* --- Add new styles below this line --- */
-
+/* ───────────────────────────────────────────────────────────────── */
+/* Breadcrumb & Social-Share Styles (for _layouts/post.html) */
 .breadcrumb {
   margin-bottom: 1em;
 }
