@@ -172,3 +172,41 @@ footer {
   .hero { padding: 32px 0 14px 0; }
   .news-section, .about-section { padding-top: 23px; }
 }
+
+/* --- Your existing CSS here --- */
+
+/* --- Add new styles below this line --- */
+
+.breadcrumb {
+  margin-bottom: 1em;
+}
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.96em;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.post .meta {
+  color: #888;
+  font-size: 1em;
+  margin-bottom: 18px;
+}
+
+.social-share {
+  margin-top: 28px;
+  font-size: 0.98em;
+  color: #333;
+}
+.social-share a {
+  color: var(--brand);
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.social-share a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
