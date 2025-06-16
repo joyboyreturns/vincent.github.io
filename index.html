@@ -1,181 +1,46 @@
+<!-- index.html -->
 ---
+layout: default
 ---
-<!DOCTYPE html>
 
+<section class="hero">
+  <div class="container">
+    <h1>Shining a Light on Tomorrow’s Tech</h1>
+    <p>Your trusted source for the latest in AI, gadgets, security, and everything digital.</p>
+    <a href="#news" class="cta-btn">See What’s New</a>
+  </div>
+</section>
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeBeacon – Tech News & Insights</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Inline Styles for Header Layout & Search -->
-  <style>
-    header .container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header .logo {
-      position: absolute;
-      left: 20px;
-    }
-    nav {
-      /* Center nav by flex container */
-    }
-    .search-container {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-    }
-    .search-container input {
-      padding: 6px 12px;
-      width: 200px;
-      border-radius: 20px;
-      border: 1px solid #ddd;
-      outline: none;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-      transition: box-shadow 0.3s, border-color 0.3s;
-    }
-    .search-container input:focus {
-      border-color: #00c896;
-      box-shadow: 0 0 8px rgba(0,200,150,0.4);
-    }
-  </style>
-
-
-  <!-- SEO Meta Tags -->
-
-
-  <meta name="description" content="CodeBeacon: Latest tech news, AI, gadgets, cybersecurity & digital insights. Stay ahead with daily updates and expert opinions.">
-  <meta name="keywords" content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
-  <meta name="author" content="Vincent">
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="CodeBeacon – Tech News & Insights">
-  <meta property="og:description" content="Your trusted source for the latest in AI, gadgets, security, and everything digital.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://codebeacon.info/">
-  <meta property="og:image" content="https://codebeacon.info/social-preview.png">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CodeBeacon – Tech News & Insights">
-  <meta name="twitter:description" content="Your trusted source for the latest in AI, gadgets, security, and everything digital.">
-  <meta name="twitter:image" content="https://codebeacon.info/social-preview.png">
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "CodeBeacon",
-    "url": "https://codebeacon.info/",
-    "description": "Latest tech news, guides, and opinion."
-  }
-  </script>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0B5D094V7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-G0B5D094V7');
-  </script>
-</head>
-<body>
-  <header>
+<main>
+  <section id="news" class="news-section">
     <div class="container">
-      <div class="logo">
-        <span>🚀</span> <span class="brand">CodeBeacon</span>
+      <h2>Latest Tech News</h2>
+      <div class="posts">
+        {% for post in paginator.posts %}
+          <article class="post">
+            <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p>{{ post.excerpt }}</p>
+            <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+          </article>
+        {% endfor %}
       </div>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="#news">News</a>
-        <a href="#about">About</a>
+
+      <nav class="pagination">
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>{% endif %}
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}<span class="page-number current">{{ page }}</span>
+          {% else %}<a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>{% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>{% endif %}
       </nav>
-      <!-- Search Container Top Right -->
-      <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search posts..." onkeyup="filterPosts()">
-      </div>
-    </div>
-  </header>
-
-
-  <section class="hero">
-    <div class="container">
-      <h1>Shining a Light on Tomorrow’s Tech</h1>
-      <p>Your trusted source for the latest in AI, gadgets, security, and everything digital.</p>
-      <a href="#news" class="cta-btn">See What’s New</a>
     </div>
   </section>
 
-
-  <main>
-    <section id="news" class="news-section">
-      <div class="container">
-        <h2>Latest Tech News</h2>
-        <div class="posts">
-          {% for post in paginator.posts %}
-            <article class="post">
-              <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-              <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
-              <p>{{ post.excerpt }}</p>
-              <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
-            </article>
-          {% endfor %}
-        </div>
-
-
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span class="page-number current">{{ page }}</span>
-        {% else %}
-          <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
-      {% endif %}
-    </nav>
-  </div>
-</section>
-
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About CodeBeacon</h2>
-    <p>CodeBeacon is your daily destination for clear, honest, and up-to-the-minute technology news, guides, and opinion. Our mission: to make tech easy and exciting for everyone—whether you’re a curious beginner or a seasoned developer.</p>
-  </div>
-</section>
-
-  </main>
-
-
-  <!-- Search Filter Script -->
-
-
-  <script>
-    function filterPosts() {
-      var input = document.getElementById('search-input');
-      var filter = input.value.toLowerCase();
-      var posts = document.querySelectorAll('.post');
-      posts.forEach(function(post) {
-        var title = post.querySelector('.post-title').innerText.toLowerCase();
-        post.style.display = (title.indexOf(filter) > -1) ? '' : 'none';
-      });
-    }
-  </script>
-
-
-  <footer>
+  <section id="about" class="about-section">
     <div class="container">
-      <p>&copy; 2025 CodeBeacon. Made with <span style="color: #ff4081;">♥</span> by Vincent.</p>
+      <h2>About CodeBeacon</h2>
+      <p>CodeBeacon is your daily destination for clear, honest, and up-to-the-minute technology news, guides, and opinion. Our mission: to make tech easy and exciting for everyone—whether you’re a curious beginner or a seasoned developer.</p>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+</main>
