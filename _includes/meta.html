@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    {% include meta.html %}
+{%- comment -%} Basic Meta Tags {%- endcomment -%}
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta name="keywords"    content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
+<meta name="author"      content="Vincent">
 
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+{%- comment -%} Open Graph {%- endcomment -%}
+<meta property="og:title"       content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta property="og:type"        content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url"         content="{{ page.url | absolute_url }}">
+<meta property="og:image"       content="{{ site.url }}/social-preview.png">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-    <link rel="alternate" type="application/rss+xml" 
-          title="{{ site.name }} - {{ site.description }}" 
-          href="{{ site.baseurl }}/feed.xml">
-  </head>
-  <body>
-    <!-- your masthead, nav, etc. -->
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-    <!-- footer, analytics, etc. -->
-    {% include analytics.html %}
-  </body>
-</html>
+{%- comment -%} Twitter Card {%- endcomment -%}
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"      content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta name="twitter:image"      content="{{ site.url }}/social-preview.png">
+
+{%- comment -%} JSON-LD Structured Data {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type":      "{% if page.layout == 'post' %}BlogPosting{% else %}Blog{% endif %}",
+  "headline":   "{{ page.title | default: site.title }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "author":     { "@type": "Person", "name": "Vincent" },
+  "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% endif %}",
+  "url":        "{{ page.url | absolute_url }}"
+}
+</script>
