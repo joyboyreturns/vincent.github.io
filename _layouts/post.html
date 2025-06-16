@@ -1,176 +1,43 @@
-{% raw %}<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | CodeBeacon</title>
-  <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
-  <!-- Inline Styles for Header & Hero -->
-  <style>
-    header .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    header .logo {
-      position: absolute;
-      left: 20px;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    .search-container {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-    }
-    .search-container input {
-      padding: 6px 12px;
-      width: 200px;
-      border-radius: 20px;
-      border: 1px solid #ddd;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-      transition: box-shadow 0.3s, border-color 0.3s;
-    }
-    .search-container input:focus {
-      border-color: #00c896;
-      box-shadow: 0 0 8px rgba(0,200,150,0.4);
-    }
-    .post-hero {
-      background: linear-gradient(135deg, #00c896 0%, #41c9e2 100%);
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      height: 200px;
-      border-radius: 0 0 20px 20px;
-    }
-    .post-card {
-      max-width: 800px;
-      margin: -100px auto 40px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      overflow: hidden;
-    }
-    .breadcrumb {
-      padding: 20px;
-    }
-    .breadcrumb a {
-      color: #00c896;
-      text-decoration: none;
-    }
-    .post-header {
-      padding: 0 20px;
-      text-align: center;
-    }
-    .post-title {
-      margin: 0.5em 0;
-    }
-    .meta {
-      color: #666;
-      font-size: 0.9em;
-    }
-    .content {
-      padding: 20px;
-      line-height: 1.6;
-    }
-    .post-footer {
-      padding: 20px;
-      border-top: 1px solid #eee;
-      text-align: center;
-    }
-    .social-share a {
-      color: #00c896;
-      text-decoration: none;
-      margin: 0 8px;
-      font-size: 0.9em;
-    }
-    .post-nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      border-top: 1px solid #eee;
-    }
-    .post-nav a {
-      color: #00c896;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="{{ '/' | relative_url }}"><span>🚀</span> CodeBeacon</a>
-      </div>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/#news' | relative_url }}">News</a>
-        <a href="{{ '/#about' | relative_url }}">About</a>
-      </nav>
-      <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search posts..." onkeyup="filterPosts()">
-      </div>
-    </div>
+---
+layout: default
+---
+
+<div class="post-hero"></div>
+
+<div class="post-card">
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">&larr; Back to Home</a>
+  </nav>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="meta">
+      By Vincent &middot;
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </p>
   </header>
 
-  <div class="post-hero"></div>
-
-  <div class="post-card">
-    <nav class="breadcrumb">
-      <a href="{{ '/' | relative_url }}">← Back to Home</a>
-    </nav>
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="meta">
-        <span>By Vincent</span> &middot;
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: "%B %d, %Y" }}
-        </time>
-      </p>
-    </header>
-    <div class="content">
-      {{ content }}
-    </div>
-    <footer class="post-footer">
-      <div class="social-share">
-        <span>Share:</span>
-        <a href="#">Twitter</a> |
-        <a href="#">Facebook</a> |
-        <a href="#">LinkedIn</a>
-      </div>
-    </footer>
-    <div class="post-nav">
-      {% if page.previous %}
-        <a href="{{ page.previous.url | relative_url }}" class="prev-post">← {{ page.previous.title }}</a>
-      {% else %}
-        <span></span>
-      {% endif %}
-      {% if page.next %}
-        <a href="{{ page.next.url | relative_url }}" class="next-post">{{ page.next.title }} →</a>
-      {% endif %}
-    </div>
+  <div class="content">
+    {{ content }}
   </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 CodeBeacon. Made with <span style="color: #00c896;">♥</span> by Vincent.</p>
+  <footer class="post-footer">
+    <div class="social-share">
+      <span>Share:</span>
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">LinkedIn</a>
     </div>
   </footer>
 
-  <script>
-    function filterPosts() {
-      var input = document.getElementById('search-input');
-      var filter = input.value.toLowerCase();
-      var posts = document.querySelectorAll('.post');
-      posts.forEach(function(post) {
-        var title = post.querySelector('.post-title')?.innerText.toLowerCase() || '';
-        post.style.display = title.indexOf(filter) > -1 ? '' : 'none';
-      });
-    }
-  </script>
-</body>
-</html>{% endraw %}
+  <div class="post-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="prev-post">&larr; {{ page.previous.title }}</a>
+    {% else %}
+      <span></span>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="next-post">{{ page.next.title }} &rarr;</a>
+    {% endif %}
+  </div>
+</div>
