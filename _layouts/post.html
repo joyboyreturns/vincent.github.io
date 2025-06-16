@@ -2,16 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | CodeBeacon</title>
   <link rel="stylesheet" href="/style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0B5D094V7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G0B5D094V7');
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>{{ page.title }}</h1>
-    <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
-    <div class="content">
-      {{ content }}
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span>🚀</span> <span class="brand">CodeBeacon</span>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#news">News</a>
+        <a href="/#about">About</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="post">
+        <h1>{{ page.title }}</h1>
+        <p class="meta">{{ page.date | date: "%B %d, %Y" }}</p>
+        <div class="content">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CodeBeacon. Made with <span style="color: #ff4081;">♥</span> by Vincent.</p>
+    </div>
+  </footer>
 </body>
 </html>
