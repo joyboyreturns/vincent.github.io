@@ -32,5 +32,17 @@ layout: default
         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </footer>
+    <div class="post-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" class="prev-post">
+      ← {{ page.previous.title }}
+    </a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" class="next-post">
+      {{ page.next.title }} →
+    </a>
+  {% endif %}
+</div>
   </div>
 </div>
