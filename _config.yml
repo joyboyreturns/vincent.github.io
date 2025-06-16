@@ -4,15 +4,11 @@ description: "Cybersecurity & Tech Insights"
 avatar: "https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png"
 
 # URL & Baseurl
-url: "https://codebeacon.info"
-baseurl: ""
+url: "https://codebeacon.info"     # Use your custom domain here!
+baseurl: ""                        # Leave empty for a user/org page
 
 # Permalink format for posts
 permalink: /:year/:month/:day/:title.html
-
-# Pagination (show 10 posts per page)
-paginate: 10
-paginate_path: "/page:num/"
 
 # Footer & Social Links
 footer-links:
@@ -27,7 +23,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 
 # Files to exclude from the build
 exclude:
