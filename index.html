@@ -71,10 +71,14 @@
     <section id="news" class="news-section">
       <div class="container">
         <h2>Latest Tech News</h2>
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search posts by title..." onkeyup="filterPosts()">
+        </div>
         <div class="posts">
           {% for post in paginator.posts %}
             <article class="post">
-              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
               <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
               <p>{{ post.excerpt }}</p>
               <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
@@ -111,6 +115,26 @@
 </section>
 
   </main>
+
+
+  <!-- Search Filter Script -->
+
+
+  <script>
+    function filterPosts() {
+      var input = document.getElementById('search-input');
+      var filter = input.value.toLowerCase();
+      var posts = document.querySelectorAll('.post');
+      posts.forEach(function(post) {
+        var title = post.querySelector('.post-title').innerText.toLowerCase();
+        if (title.indexOf(filter) > -1) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+  </script>
 
 
   <footer>
