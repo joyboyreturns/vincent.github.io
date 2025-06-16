@@ -1,18 +1,30 @@
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+{%- comment -%} Basic Meta Tags {%- endcomment -%}
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta name="keywords"    content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
+<meta name="author"      content="Vincent">
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+{%- comment -%} Open Graph {%- endcomment -%}
+<meta property="og:title"       content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta property="og:type"        content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url"         content="{{ page.url | absolute_url }}">
+<meta property="og:image"       content="{{ site.url }}/social-preview.png">
 
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+{%- comment -%} Twitter Card {%- endcomment -%}
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"      content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+<meta name="twitter:image"      content="{{ site.url }}/social-preview.png">
+
+{%- comment -%} JSON-LD Structured Data {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type":      "{% if page.layout == 'post' %}BlogPosting{% else %}Blog{% endif %}",
+  "headline":   "{{ page.title | default: site.title }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "author":     { "@type": "Person", "name": "Vincent" },
+  "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% endif %}",
+  "url":        "{{ page.url | absolute_url }}"
+}
+</script>
