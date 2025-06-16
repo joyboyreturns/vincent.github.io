@@ -25,35 +25,35 @@ excerpt_separator: <!--more-->
 
 # iOS 26 at a Glance — Why This Update Matters
 
-Apple officially unveiled **iOS 26** on June 9 at WWDC 2025, and the first developer beta dropped a day later. The update combines a striking **Liquid Glass** visual overhaul with powerful **Apple Intelligence** features that reach deep into system apps, while polishing day-to-day basics like Phone, Messages, and Maps. Public beta testers can hop aboard in July, and the final release is slated for mid-September 2025.  [oai_citation:0‡as.com](https://as.com/meristation/betech/asi-es-la-nueva-interfaz-de-ios-el-sistema-operativo-de-apple-en-iphone-todos-los-cambios-y-novedades-n/?utm_source=chatgpt.com) [oai_citation:1‡apple.com](https://www.apple.com/newsroom/2025/06/apple-elevates-the-iphone-experience-with-ios-26/?utm_source=chatgpt.com)
+Apple officially unveiled **iOS 26** on June 9 at WWDC 2025, and the first developer beta dropped a day later. The update combines a striking **Liquid Glass** visual overhaul with powerful **Apple Intelligence** features that reach deep into system apps, while polishing day-to-day basics like Phone, Messages, and Maps. Public beta testers can hop aboard in July, and the final release is slated for mid-September 2025.
 
 ---
 
 ## Supported iPhone Models
 
-If you own an **iPhone 11 or newer**, you’re in luck—older handsets finally age out this cycle. Expect a roughly 5 GB OTA download for most devices.  [oai_citation:2‡as.com](https://as.com/meristation/betech/asi-es-la-nueva-interfaz-de-ios-el-sistema-operativo-de-apple-en-iphone-todos-los-cambios-y-novedades-n/?utm_source=chatgpt.com)
+If you own an **iPhone 11 or newer**, you’re in luck—older handsets finally age out this cycle. Expect a roughly 5 GB OTA download for most devices.
 
 ---
 
 ## 5 Stand-Out Features You’ll Notice on Day One
 
 ### 1. Liquid Glass Design  
-Menus, tab bars, and widgets now borrow translucent cues from visionOS. Scroll down and tab bars elegantly shrink, letting the content take center stage; scroll back up and they pop right back.  [oai_citation:3‡apple.com](https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/?utm_source=chatgpt.com)
+Menus, tab bars, and widgets now borrow translucent cues from visionOS. Scroll down and tab bars elegantly shrink, letting the content take center stage; scroll back up and they pop right back.
 
 ### 2. Apple Intelligence Everywhere  
 Think of it as an on-device AI layer:  
 - **Genmoji & Image Playground** for custom emoji and quick image generation  
 - **Context-aware Siri suggestions** inside apps  
-- Offline **real-time translation** plus spam-call and phishing-text detection in Messages and Phone  [oai_citation:4‡as.com](https://as.com/meristation/betech/asi-es-la-nueva-interfaz-de-ios-el-sistema-operativo-de-apple-en-iphone-todos-los-cambios-y-novedades-n/?utm_source=chatgpt.com) [oai_citation:5‡apple.com](https://www.apple.com/newsroom/2025/06/apple-elevates-the-iphone-experience-with-ios-26/?utm_source=chatgpt.com)
+- Offline **real-time translation** plus spam-call and phishing-text detection in Messages and Phone
 
 ### 3. Smarter Phone & Contacts  
-A new Call Availability indicator shows when someone you’re ringing is marked as “Busy,” so you can text instead of waiting.  [oai_citation:6‡as.com](https://as.com/meristation/betech/asi-es-la-nueva-interfaz-de-ios-el-sistema-operativo-de-apple-en-iphone-todos-los-cambios-y-novedades-n/?utm_source=chatgpt.com)
+A new Call Availability indicator shows when someone you’re ringing is marked as “Busy,” so you can text instead of waiting.
 
 ### 4. Messages Gets Social  
-Custom chat backgrounds, inline polls, and upgraded sticker search make group threads livelier, while AI scans for shady links in the background.  [oai_citation:7‡as.com](https://as.com/meristation/betech/asi-es-la-nueva-interfaz-de-ios-el-sistema-operativo-de-apple-en-iphone-todos-los-cambios-y-novedades-n/?utm_source=chatgpt.com)
+Custom chat backgrounds, inline polls, and upgraded sticker search make group threads livelier, while AI scans for shady links in the background.
 
 ### 5. CarPlay, Maps & Wallet Tweaks  
-Look for glanceable EV-route widgets, live parking-garage occupancy, and tap-to-confirm transit cards.  [oai_citation:8‡apple.com](https://www.apple.com/newsroom/2025/06/apple-elevates-the-iphone-experience-with-ios-26/?utm_source=chatgpt.com)
+Look for glanceable EV-route widgets, live parking-garage occupancy, and tap-to-confirm transit cards.
 
 ---
 
@@ -75,17 +75,17 @@ Look for glanceable EV-route widgets, live parking-garage occupancy, and tap-to-
 ## How to Grab the Beta in 3 Minutes
 
 1. **Back Up First**  
-   Head to *Settings → Apple ID → iCloud → iCloud Backup* (or Finder on macOS).  
+   Head to *Settings → Apple ID → iCloud → iCloud Backup* (or use Finder on macOS).  
 2. **Enroll Your Device**  
-   Sign in with your Apple ID at the developer portal, then open *Settings → General → Software Update → Beta Updates* and select **iOS 26 Developer Beta**.  
+   Open *Settings → General → Software Update → Beta Updates* and select **iOS 26 Developer Beta**.  
 3. **Download & Restart**  
-   The installer weighs 5 – 6 GB. Tap **Install**, wait through two reboots, and you’re in.
+   The installer weighs about 5 – 6 GB. Tap **Install**, wait through two reboots, and you’re in.
 
 ---
 
 ## Early Bugs & Work-arounds
 
-A few testers report flickering widgets and occasional tap-delay inside Messages polls. A quick settings reset (`Settings → General → Transfer or Reset iPhone → Reset All Settings`) smooths things out until Beta 2 arrives.  [oai_citation:9‡appleinsider.com](https://appleinsider.com/articles/25/06/13/apple-slips-out-a-quiet-ios-26-beta-1-update-with-a-new-build?utm_source=chatgpt.com)
+A few testers report flickering widgets and occasional tap-delay inside Messages polls. A quick settings reset (`Settings → General → Transfer or Reset iPhone → Reset All Settings`) smooths things out until Beta 2 arrives.
 
 ---
 
