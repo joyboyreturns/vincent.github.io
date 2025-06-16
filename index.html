@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +46,7 @@
         <span>🚀</span> <span class="brand">CodeBeacon</span>
       </div>
       <nav>
-        <a href="#">Home</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
         <a href="#news">News</a>
         <a href="#about">About</a>
       </nav>
@@ -68,15 +66,33 @@
       <div class="container">
         <h2>Latest Tech News</h2>
         <div class="posts">
-    {% for post in site.posts %}
-      <article class="post">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
-        <p>{{ post.excerpt }}</p>
-        <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
-      </article>
-    {% endfor %}
-  </div>
+          {% for post in paginator.posts %}
+            <article class="post">
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
+              <p>{{ post.excerpt }}</p>
+              <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+            </article>
+          {% endfor %}
+        </div>
+
+        <nav class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
+          {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <span class="page-number current">{{ page }}</span>
+            {% else %}
+              <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
+          {% endif %}
+        </nav>
       </div>
     </section>
 
