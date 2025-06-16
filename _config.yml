@@ -4,8 +4,8 @@ description: "Cybersecurity & Tech Insights"
 avatar: "https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png"
 
 # URL & Baseurl
-url: "https://joyboyreturns.github.io"
-baseurl: ""   # leave empty for a user/org page
+url: "https://codebeacon.info"     # Use your custom domain here!
+baseurl: ""                        # Leave empty for a user/org page
 
 # Permalink format for posts
 permalink: /:year/:month/:day/:title.html
@@ -19,6 +19,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
