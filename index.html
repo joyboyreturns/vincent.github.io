@@ -1,7 +1,6 @@
 ---
 ---
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -42,10 +41,69 @@
       border-color: #00c896;
       box-shadow: 0 0 8px rgba(0,200,150,0.4);
     }
+    
+    /* MOBILE-ONLY ADJUSTMENTS */
+    @media only screen and (max-width: 600px) {
+      /* Stack header items */
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+      }
+      /* Logo at top left, nav below */
+      header .logo {
+        position: static;
+        margin-bottom: 10px;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+      /* Move search into flow */
+      .search-container {
+        position: static;
+        transform: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .search-container input {
+        width: 90%;
+      }
+      /* Hero text scaled down */
+      .hero .container h1 {
+        font-size: 1.5rem;
+      }
+      .hero .container p {
+        font-size: 0.9rem;
+      }
+      /* Posts stack full-width */
+      .news-section .posts {
+        display: block;
+      }
+      .news-section .post {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      /* Pagination buttons full-width */
+      .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .pagination a, .pagination .page-number {
+        margin: 5px;
+      }
+      /* About section padding tweak */
+      .about-section .container {
+        padding: 0 10px 20px;
+      }
+    }
   </style>
 
   <!-- SEO Meta Tags -->
-
   <meta name="description" content="CodeBeacon: Latest tech news, AI, gadgets, cybersecurity & digital insights. Stay ahead with daily updates and expert opinions.">
   <meta name="keywords" content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
   <meta name="author" content="Vincent">
@@ -120,37 +178,35 @@
           {% endfor %}
         </div>
 
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
-      {% endif %}
+        <nav class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
+          {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span class="page-number current">{{ page }}</span>
-        {% else %}
-          <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <span class="page-number current">{{ page }}</span>
+            {% else %}
+              <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
 
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
-      {% endif %}
-    </nav>
-  </div>
-</section>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
+          {% endif %}
+        </nav>
+      </div>
+    </section>
 
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About CodeBeacon</h2>
-    <p>CodeBeacon is your daily destination for clear, honest, and up-to-the-minute technology news, guides, and opinion. Our mission: to make tech easy and exciting for everyone—whether you’re a curious beginner or a seasoned developer.</p>
-  </div>
-</section>
-
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About CodeBeacon</h2>
+        <p>CodeBeacon is your daily destination for clear, honest, and up-to-the-minute technology news, guides, and opinion. Our mission: to make tech easy and exciting for everyone—whether you’re a curious beginner or a seasoned developer.</p>
+      </div>
+    </section>
   </main>
 
   <!-- Search Filter Script -->
-
   <script>
     function filterPosts() {
       var input = document.getElementById('search-input');
@@ -170,3 +226,4 @@
   </footer>
 </body>
 </html>
+
