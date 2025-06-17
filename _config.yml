@@ -33,6 +33,10 @@ exclude:
   - LICENSE
   - README.md
 
+  # Files Jekyll will preserve in the _site folder even if excluded
+keep_files:
+  - CNAME
+
 # Footer & Social Links
 footer-links:
   github: "joyboyreturns/vincent.github.io"
