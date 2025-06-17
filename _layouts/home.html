@@ -1,22 +1,104 @@
-<!-- _layouts/home.html -->
 <!DOCTYPE html>
-<html>
-  <head>
-    {% include meta.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-  </head>
-  <body>
-    {% include header.html %}
-    
-    <!-- THIS is your homepage markup: -->
-    <div class="post-hero"></div>
+<html lang="en">
+<head>
+  {% include meta.html %}
+  <title>{{ site.name }} – {{ site.description }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+</head>
+<body>
+  <header>
     <div class="container">
-      <div class="post-card">
-        <!-- breadcrumb, header, search filter, post loop, etc… -->
+      <div class="logo">
+        <span>🚀</span>
+        <span class="brand">{{ site.name }}</span>
+      </div>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="#news">News</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search posts..."
+          onkeyup="filterPosts()"
+        >
       </div>
     </div>
-    <!-- END homepage markup -->
-    
-    {% include footer.html %}
-  </body>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Shining a Light on Tomorrow’s Tech</h1>
+      <p>Your trusted source for the latest in AI, gadgets, security, and everything digital.</p>
+      <a href="#news" class="cta-btn">See What’s New</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="news" class="news-section">
+      <div class="container">
+        <h2>Latest Tech News</h2>
+        <div class="posts">
+          {% for post in paginator.posts %}
+            <article class="post">
+              <h3 class="post-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
+              <p>{{ post.excerpt }}</p>
+              <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+            </article>
+          {% endfor %}
+        </div>
+
+        <nav class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
+          {% endif %}
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <span class="page-number current">{{ page }}</span>
+            {% else %}
+              <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
+          {% endif %}
+        </nav>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About {{ site.name }}</h2>
+        <p>{{ site.description }}</p>
+      </div>
+    </section>
+  </main>
+
+  <div style="text-align:center; padding:20px 0;">
+    <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a> |
+    <a href="mailto:{{ site.email | default: 'vincent@codebeacon.info' }}">Contact</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.name }}. Made with <span style="color:#ff4081;">♥</span> by Vincent.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterPosts() {
+      var input = document.getElementById('search-input');
+      var filter = input.value.toLowerCase();
+      document.querySelectorAll('.post').forEach(function(post) {
+        var title = post.querySelector('.post-title').innerText.toLowerCase();
+        post.style.display = title.indexOf(filter) > -1 ? '' : 'none';
+      });
+    }
+  </script>
+</body>
 </html>
