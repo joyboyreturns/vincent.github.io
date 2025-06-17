@@ -4,29 +4,27 @@ description: "Cybersecurity & Tech Insights"
 avatar: "https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png"
 
 # URL & Baseurl
-url: "https://codebeacon.info"     # Use your custom domain here!
-baseurl: ""                        # Leave empty for a user/org page
+url: "https://codebeacon.info"
+baseurl: ""
 
-# Permalink format for posts
+# Permalinks
 permalink: /:year/:month/:day/:title.html
 
-# Footer & Social Links
-footer-links:
-  github: "joyboyreturns/vincent.github.io"
-
-# Markdown & Syntax Highlighting
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-# Plugins
+# Posts pagination
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
 paginate: 10
 paginate_path: "/page:num/"
- 
+
+# Markdown & Syntax Highlighting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Timezone (so your dates render in IST)
+timezone: "Asia/Kolkata"
 
 # Files to exclude from the build
 exclude:
@@ -36,4 +34,6 @@ exclude:
   - README.md
   - CNAME
 
-  timezone: "Asia/Kolkata"
+# Footer & Social Links
+footer-links:
+  github: "joyboyreturns/vincent.github.io"
