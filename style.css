@@ -6,7 +6,11 @@
   --shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
@@ -21,24 +25,38 @@ body {
   margin: 0 auto;
 }
 
+/* ─── Header & Hero ───────────────────────────────────────────────────────── */
+
 header {
   background: var(--primary);
   color: #fff;
   box-shadow: var(--shadow);
 }
-
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
 }
-
-.logo { font-size: 1.7em; font-weight: bold; letter-spacing: 2px; }
-.logo .brand { color: var(--brand); margin-left: 0.4em; }
-
-nav a { color: #fff; text-decoration: none; margin-left: 24px; font-weight: 500; transition: color 0.2s; }
-nav a:hover { color: var(--accent); }
+.logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.logo .brand {
+  color: var(--brand);
+  margin-left: 0.4em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--accent);
+}
 
 .hero {
   background: linear-gradient(90deg, var(--accent) 0%, var(--brand) 100%);
@@ -46,89 +64,231 @@ nav a:hover { color: var(--accent); }
   padding: 60px 0 30px 0;
   text-align: center;
 }
-.hero h1 { font-size: 2.3em; font-weight: 800; margin-bottom: 18px; line-height: 1.15; }
-.hero p { font-size: 1.15em; margin-bottom: 24px; }
+.hero h1 {
+  font-size: 2.3em;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+.hero p {
+  font-size: 1.15em;
+  margin-bottom: 24px;
+}
 .cta-btn {
-  background: #fff; color: var(--primary); padding: 12px 32px; border: none;
-  border-radius: 24px; font-size: 1em; font-weight: bold; text-decoration: none;
-  box-shadow: var(--shadow); transition: background 0.2s, color 0.2s;
+  background: #fff;
+  color: var(--primary);
+  padding: 12px 32px;
+  border: none;
+  border-radius: 24px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: background 0.2s, color 0.2s;
 }
-.cta-btn:hover { background: var(--primary); color: #fff; }
+.cta-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
 
-.news-section { padding: 40px 0 10px 0; }
+/* ─── Post Listing ─────────────────────────────────────────────────────────── */
+
+.news-section {
+  padding: 40px 0 10px 0;
+}
 .news-section h2 {
-  font-size: 1.7em; color: var(--brand); margin-bottom: 25px;
-  font-weight: 700; text-align: center;
+  font-size: 1.7em;
+  color: var(--brand);
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.post {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 26px 22px;
+  transition: box-shadow 0.22s;
+}
+.post:hover {
+  box-shadow: 0 4px 24px rgba(65, 201, 226, 0.13);
+}
+.post h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.2em;
+}
+.post h3 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.post h3 a:hover {
+  color: var(--brand);
+}
+.meta {
+  font-size: 0.98em;
+  color: #888;
+  margin-bottom: 10px;
+}
+.read-more {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.read-more:hover {
+  text-decoration: underline;
 }
 
-.posts { display: flex; flex-direction: column; gap: 30px; }
-.post {
-  background: #fff; border-radius: 12px; box-shadow: var(--shadow);
-  padding: 26px 22px; transition: box-shadow 0.22s;
-}
-.post:hover { box-shadow: 0 4px 24px rgba(65, 201, 226, 0.13); }
-.post h3 { font-size: 1.25em; margin-bottom: 0.2em; }
-.post h3 a { color: var(--primary); text-decoration: none; }
-.post h3 a:hover { color: var(--brand); }
-.meta { font-size: 0.98em; color: #888; margin-bottom: 10px; }
-.read-more {
-  color: var(--accent); text-decoration: none; font-weight: 600;
-}
-.read-more:hover { text-decoration: underline; }
+/* ─── About & Footer ───────────────────────────────────────────────────────── */
 
 .about-section {
-  background: #fff; margin-top: 40px; border-radius: 10px;
-  box-shadow: var(--shadow); padding: 34px 22px; text-align: center;
+  background: #fff;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 34px 22px;
+  text-align: center;
 }
-.about-section h2 { color: var(--primary); margin-bottom: 15px; }
+.about-section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
 
 footer {
-  margin-top: 36px; padding: 22px 0;
-  background: var(--primary); color: #fff; text-align: center;
-  font-size: 1em; border-radius: 0 0 6px 6px;
+  margin-top: 36px;
+  padding: 22px 0;
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 0 0 6px 6px;
 }
 
-/* Breadcrumb & Social-Share Styles */
+/* ─── Single-Post Layout ────────────────────────────────────────────────────── */
+
 .post-card {
-  background: #fff; border-radius: 18px;
+  background: #fff;
+  border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  padding: 32px 28px; max-width: 800px; margin: 45px auto 65px auto;
+  padding: 32px 28px;
+  max-width: 800px;
+  margin: 45px auto 65px auto;
 }
-.post-header { margin-bottom: 22px; }
+.post-header {
+  margin-bottom: 22px;
+}
 .post-title {
-  font-size: 2.1em; font-weight: 800; margin-bottom: 10px;
+  font-size: 2.1em;
+  font-weight: 800;
+  margin-bottom: 10px;
   color: var(--primary);
 }
-.post-card .meta { color: #888; font-size: 1em; margin-bottom: 10px; }
-.breadcrumb { margin-bottom: 1em; }
-.breadcrumb a { color: var(--accent); text-decoration: none; font-size: 0.98em; }
-.breadcrumb a:hover { text-decoration: underline; }
-.social-share { margin-top: 38px; font-size: 0.98em; color: #333; }
+.post-card .meta {
+  color: #888;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  margin-bottom: 1em;
+}
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.98em;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.social-share {
+  margin-top: 38px;
+  font-size: 0.98em;
+  color: #333;
+}
 .social-share a {
-  color: var(--brand); margin-right: 8px;
-  text-decoration: none; font-weight: 500;
+  color: var(--brand);
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: 500;
 }
-.social-share a:hover { color: var(--accent); text-decoration: underline; }
-
-.post-hero {
-  width: 100%; height: 88px;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--brand) 100%);
-  margin-bottom: 0; border-radius: 0 0 32px 32px;
+.social-share a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.post-nav a {
+  background: var(--brand);
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.post-nav a:hover {
+  background: var(--accent);
 }
 
-/* Responsive for mobile */
+/* ─── Responsive Media ──────────────────────────────────────────────────────── */
+
+/* Fluid videos and images */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  margin: 1.5em 0;
+}
+.video-embed iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile tweaks */
 @media (max-width: 700px) {
-  .container { width: 97%; }
+  .container {
+    width: 97%;
+  }
   header .container {
-    flex-direction: column; align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .hero { padding: 32px 0 14px 0; }
-  .news-section, .about-section { padding-top: 23px; }
-  .posts { gap: 15px; }
-  .post, .about-section { padding: 18px 7px; }
+  .hero {
+    padding: 32px 0 14px 0;
+  }
+  .news-section,
+  .about-section {
+    padding-top: 23px;
+  }
+  .posts {
+    gap: 15px;
+  }
+  .post,
+  .about-section {
+    padding: 18px 7px;
+  }
   .post-card {
-    padding: 16px 6px; margin: 20px 0 35px 0;
+    padding: 16px 6px;
+    margin: 20px 0 35px 0;
   }
-  .post-title { font-size: 1.4em; }
-  .post-hero { height: 58px; border-radius: 0 0 14px 14px; }
+  .post-title {
+    font-size: 1.4em;
+  }
+  .post-hero {
+    height: 58px;
+    border-radius: 0 0 14px 14px;
+  }
 }
