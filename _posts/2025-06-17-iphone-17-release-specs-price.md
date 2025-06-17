@@ -14,8 +14,8 @@ permalink: /2025/06/17/iphone-17-release-specs-price/
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/Ghmw1xzASY0"
-    title="Everything We Know About iPhone 17 (Rumors & Leaks)"
+    src="https://www.youtube.com/embed/efiwe91ZCa0"
+    title="iPhone 17, 17 Air, 17 Pro and 17 Pro Max – Everything We Know"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -32,12 +32,12 @@ Apple’s iPhone 17 is shaping up to be its most AI-driven update yet. Expect an
 
 ## Release Date & Pricing
 
-| Model              | Expected Launch    | US Price (rumor)    |
-|--------------------|--------------------|---------------------|
-| **iPhone 17**      | Mid-Sept 2025      | **$799** (128 GB)   |
-| **iPhone 17 Plus** | Mid-Sept 2025      | **$899** (256 GB)   |
-| **iPhone 17 Pro**  | Mid-Sept 2025      | **$1,099** (256 GB) |
-| **iPhone 17 Max**  | Mid-Sept 2025      | **$1,299** (512 GB) |
+| Model               | Expected Launch    | US Price (rumor)      |
+|---------------------|--------------------|-----------------------|
+| **iPhone 17**       | Mid-Sept 2025      | **$799** (128 GB)     |
+| **iPhone 17 Plus**  | Mid-Sept 2025      | **$899** (256 GB)     |
+| **iPhone 17 Pro**   | Mid-Sept 2025      | **$1,099** (256 GB)   |
+| **iPhone 17 Max**   | Mid-Sept 2025      | **$1,299** (512 GB)   |
 
 Pre-orders typically open a week before launch, with carrier trade-in deals knocking up to $200 off.
 
@@ -45,18 +45,18 @@ Pre-orders typically open a week before launch, with carrier trade-in deals knoc
 
 ## Specs Snapshot
 
-| Component         | iPhone 17 / 17 Plus         | iPhone 17 Pro / Max            |
-|-------------------|-----------------------------|--------------------------------|
-| **Chipset**       | A18 Bionic (4 nm)           | A18 Pro (4 nm, 6-core GPU)     |
-| **Display**       | 6.1″ / 6.7″ 120 Hz LTPO      | 6.1″ / 6.7″ 120 Hz LTPO OLED    |
-| **RAM**           | 8 GB                        | 12 GB                          |
-| **Storage**       | 128 GB, 256 GB              | 256 GB, 512 GB, 1 TB            |
-| **Main Camera**   | 48 MP wide + 12 MP ultra     | 48 MP wide + 48 MP tele + 12 MP ultra |
-| **Periscope Zoom**| —                           | 5× optical (Max only)          |
-| **Front Camera**  | 12 MP TrueDepth             | 12 MP TrueDepth + autofocus    |
-| **Battery**       | +10% vs iPhone 16           | +15% vs iPhone 16              |
-| **Charging**      | 20 W wired · 15 W MagSafe   | 27 W wired · 15 W MagSafe      |
-| **OS**            | iOS 19                      | iOS 19                         |
+| Component           | iPhone 17 / 17 Plus           | iPhone 17 Pro / Max          |
+|---------------------|-------------------------------|------------------------------|
+| **Chipset**         | A18 Bionic (4 nm)             | A18 Pro (4 nm, 6-core GPU)   |
+| **Display**         | 6.1″ / 6.7″ 120 Hz LTPO       | 6.1″ / 6.7″ 120 Hz LTPO OLED |
+| **RAM**             | 8 GB                          | 12 GB                        |
+| **Storage**         | 128 GB, 256 GB                | 256 GB, 512 GB, 1 TB         |
+| **Main Camera**     | 48 MP wide + 12 MP ultra       | 48 MP wide + 48 MP tele + 12 MP ultra |
+| **Periscope Zoom**  | —                             | 5× optical (Max only)        |
+| **Front Camera**    | 12 MP TrueDepth               | 12 MP TrueDepth + autofocus  |
+| **Battery**         | +10 % vs iPhone 16            | +15 % vs iPhone 16           |
+| **Charging**        | 20 W wired · 15 W MagSafe     | 27 W wired · 15 W MagSafe    |
+| **OS**              | iOS 19                        | iOS 19                       |
 
 ---
 
@@ -77,8 +77,8 @@ Apple’s big camera push includes a **periscope telephoto** on the Max model, d
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/NXGkvW6NIg4"
-    title="iPhone 17 Pro Max Camera & Hands-On Leaks"
+    src="https://www.youtube.com/embed/JweY81Azn1c"
+    title="10 SHOCKING LEAKS for the iPhone 17 Pro You Need to Know!"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -89,7 +89,7 @@ Apple’s big camera push includes a **periscope telephoto** on the Max model, d
 
 ## Battery, Charging & Performance
 
-The more efficient A18 Pro chip promises **20% faster** CPU and **30% faster** GPU than last year, while larger batteries deliver an extra **2 hours of video playback** on the Pro Max. **MagSafe** accessories gain new **Smart Battery** packs with Qi-2 support and smarter charge management via iOS 19.
+The more efficient A18 Pro chip promises **20 % faster** CPU and **30 % faster** GPU than last year, while larger batteries deliver an extra **2 hours of video playback** on the Pro Max. **MagSafe** accessories gain new **Smart Battery** packs with Qi-2 support and smarter charge management via iOS 19.
 
 ---
 
