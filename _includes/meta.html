@@ -1,30 +1,31 @@
 {%- comment -%} Basic Meta Tags {%- endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-<meta name="keywords"    content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
-<meta name="author"      content="Vincent">
+<meta name="keywords" content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
+<meta name="author" content="Vincent">
 
 {%- comment -%} Open Graph {%- endcomment -%}
-<meta property="og:title"       content="{{ page.title | default: site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-<meta property="og:type"        content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:url"         content="{{ page.url | absolute_url }}">
-<meta property="og:image"       content="{{ site.url }}/social-preview.png">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.url }}/social-preview.png">
 
 {%- comment -%} Twitter Card {%- endcomment -%}
-<meta name="twitter:card"       content="summary_large_image">
-<meta name="twitter:title"      content="{{ page.title | default: site.title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-<meta name="twitter:image"      content="{{ site.url }}/social-preview.png">
+<meta name="twitter:image" content="{{ site.url }}/social-preview.png">
 
 {%- comment -%} JSON-LD Structured Data {%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type":      "{% if page.layout == 'post' %}BlogPosting{% else %}Blog{% endif %}",
-  "headline":   "{{ page.title | default: site.title }}",
+  "@type": "{% if page.layout == 'post' %}BlogPosting{% else %}Blog{% endif %}",
+  "headline": "{{ page.title | default: site.title }}",
   "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
-  "author":     { "@type": "Person", "name": "Vincent" },
+  "author": { "@type": "Person", "name": "Vincent" },
   "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% endif %}",
-  "url":        "{{ page.url | absolute_url }}"
+  "url": "{{ page.url | absolute_url }}"
 }
 </script>
