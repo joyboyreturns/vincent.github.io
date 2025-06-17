@@ -41,16 +41,7 @@
       <div class="container">
         <h2>Latest Tech News</h2>
         <div class="posts">
-          {% for post in paginator.posts %}
-            <article class="post">
-              <h3 class="post-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              <p class="meta">{{ post.date | date: "%B %d, %Y" }}</p>
-              <p>{{ post.excerpt }}</p>
-              <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
-            </article>
-          {% endfor %}
+          <!-- Posts will be rendered here -->
         </div>
 
         <nav class="pagination">
@@ -91,12 +82,26 @@
   </footer>
 
   <script>
+    let allPosts = [];
+    fetch('{{ "/search.json" | absolute_url }}')
+      .then(res => res.json())
+      .then(data => allPosts = data);
+
     function filterPosts() {
-      var input = document.getElementById('search-input');
-      var filter = input.value.toLowerCase();
-      document.querySelectorAll('.post').forEach(function(post) {
-        var title = post.querySelector('.post-title').innerText.toLowerCase();
-        post.style.display = title.indexOf(filter) > -1 ? '' : 'none';
+      const q = document.getElementById('search-input').value.toLowerCase();
+      const results = allPosts.filter(p => p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q));
+      const container = document.querySelector('.posts');
+      container.innerHTML = '';
+      results.forEach(p => {
+        const art = document.createElement('article');
+        art.className = 'post';
+        art.innerHTML = `
+          <h3 class="post-title"><a href="${p.url}">${p.title}</a></h3>
+          <p class="meta">${new Date(p.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p>${p.excerpt}</p>
+          <a class="read-more" href="${p.url}">Read more &rarr;</a>
+        `;
+        container.appendChild(art);
       });
     }
   </script>
