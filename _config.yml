@@ -32,7 +32,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
 
 # Footer & Social Links
 footer-links:
