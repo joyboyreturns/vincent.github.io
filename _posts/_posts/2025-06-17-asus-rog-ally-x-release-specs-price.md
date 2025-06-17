@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asus ROG Ally X Release Date, Price & Full Specs — Windows Handheld Levels Up"
-date: 2025-06-16 00:00:00 +0530
+date: 2025-06-17 00:00:00 +0530
 categories: [Handhelds, Asus, ROG Ally X]
 description: "Everything about the Asus ROG Ally X: launch timeline, Ryzen Z2 Extreme power, Xbox tie-ins, battery upgrade, price leaks and first impressions."
 meta_description: "Asus ROG Ally X release date, price, specs, Ryzen Z2 Extreme, 24 GB RAM, 80 Wh battery, Xbox partnership, Windows 11 handheld — complete guide."
