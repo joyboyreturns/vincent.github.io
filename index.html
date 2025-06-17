@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeBeacon – Tech News & Insights</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Inline Styles for Header Layout & Search -->
+  <!-- Inline Styles for Header Layout, Search & Mobile Adjustments -->
   <style>
     header .container {
       position: relative;
@@ -18,9 +18,6 @@
     header .logo {
       position: absolute;
       left: 20px;
-    }
-    nav {
-      /* Center nav by flex container */
     }
     .search-container {
       position: absolute;
@@ -41,16 +38,14 @@
       border-color: #00c896;
       box-shadow: 0 0 8px rgba(0,200,150,0.4);
     }
-    
+
     /* MOBILE-ONLY ADJUSTMENTS */
     @media only screen and (max-width: 600px) {
-      /* Stack header items */
       header .container {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
       }
-      /* Logo at top left, nav below */
       header .logo {
         position: static;
         margin-bottom: 10px;
@@ -61,7 +56,6 @@
         justify-content: space-around;
         margin-bottom: 10px;
       }
-      /* Move search into flow */
       .search-container {
         position: static;
         transform: none;
@@ -73,14 +67,12 @@
       .search-container input {
         width: 90%;
       }
-      /* Hero text scaled down */
       .hero .container h1 {
         font-size: 1.5rem;
       }
       .hero .container p {
         font-size: 0.9rem;
       }
-      /* Posts stack full-width */
       .news-section .posts {
         display: block;
       }
@@ -88,7 +80,6 @@
         width: 100%;
         margin-bottom: 20px;
       }
-      /* Pagination buttons full-width */
       .pagination {
         flex-wrap: wrap;
         justify-content: center;
@@ -96,29 +87,25 @@
       .pagination a, .pagination .page-number {
         margin: 5px;
       }
-      /* About section padding tweak */
       .about-section .container {
         padding: 0 10px 20px;
       }
     }
   </style>
 
-  <!-- SEO Meta Tags -->
+  <!-- SEO & Social Meta Tags -->
   <meta name="description" content="CodeBeacon: Latest tech news, AI, gadgets, cybersecurity & digital insights. Stay ahead with daily updates and expert opinions.">
   <meta name="keywords" content="Tech News, AI, Gadgets, Cybersecurity, CodeBeacon, Technology, Digital Trends, Programming, Security">
   <meta name="author" content="Vincent">
-  <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="CodeBeacon – Tech News & Insights">
   <meta property="og:description" content="Your trusted source for the latest in AI, gadgets, security, and everything digital.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://codebeacon.info/">
   <meta property="og:image" content="https://codebeacon.info/social-preview.png">
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CodeBeacon – Tech News & Insights">
   <meta name="twitter:description" content="Your trusted source for the latest in AI, gadgets, security, and everything digital.">
   <meta name="twitter:image" content="https://codebeacon.info/social-preview.png">
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -148,7 +135,6 @@
         <a href="#news">News</a>
         <a href="#about">About</a>
       </nav>
-      <!-- Search Container Top Right -->
       <div class="search-container">
         <input type="text" id="search-input" placeholder="Search posts..." onkeyup="filterPosts()">
       </div>
@@ -182,7 +168,6 @@
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">&laquo; Newer Posts</a>
           {% endif %}
-
           {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
               <span class="page-number current">{{ page }}</span>
@@ -190,7 +175,6 @@
               <a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}" class="page-number">{{ page }}</a>
             {% endif %}
           {% endfor %}
-
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older Posts &raquo;</a>
           {% endif %}
@@ -206,6 +190,17 @@
     </section>
   </main>
 
+  <!-- Privacy Policy Link -->
+  <div style="text-align: center; padding: 20px 0;">
+    <a href="https://www.termsfeed.com/live/6a4bcecb-6eab-4b90-883f-711bcbfa9ceb" target="_blank" rel="noopener">Privacy Policy</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CodeBeacon. Made with <span style="color: #ff4081;">♥</span> by Vincent.</p>
+    </div>
+  </footer>
+
   <!-- Search Filter Script -->
   <script>
     function filterPosts() {
@@ -218,12 +213,5 @@
       });
     }
   </script>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 CodeBeacon. Made with <span style="color: #ff4081;">♥</span> by Vincent.</p>
-    </div>
-  </footer>
 </body>
 </html>
-
