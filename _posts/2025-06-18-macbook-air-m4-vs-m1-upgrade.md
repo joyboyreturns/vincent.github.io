@@ -79,6 +79,7 @@ Both notebooks are silent thanks to passive cooling. Under sustained CPU loads, 
 **Skip the upgrade if…**  
 - Your M1 handles email, browsing, and office tasks well.  
 - You want to save hundreds and don’t need the extra performance.
+  
 
   
 The **M4 MacBook Air** represents the biggest leap in the Air lineup since Apple Silicon’s debut—eliminating the 8 GB bottleneck, enabling dual-monitor setups, and extending battery life, all at the same entry price. Heavy multitaskers and long-term users will find the upgrade well worth it; those on a budget can still enjoy solid performance from the M1.  
