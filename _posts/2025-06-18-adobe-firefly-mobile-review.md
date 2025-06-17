@@ -71,13 +71,6 @@ When Adobe rolled out Firefly for the web last year, creatives flocked to its **
 - **3D Model Output**: Firefly Image 5 alpha already exports USDZ; expect that pipeline to hit phones in early 2026.  
 - **Apple Vision-OS Companion**: Code strings mention a “Firefly Viewer” for Vision Pro, letting you pull mobile-generated scenes into mixed-reality storyboards.
 
-## SEO Tips & Best Practices   
-- **Keyword Focus**: “Adobe Firefly mobile app,” “Firefly AI image generator,” “Adobe Firefly pricing.”  
-- **Meta Description**: 155 chars max—highlight mobile AI, free credits, and Creative Cloud sync.  
-- **Internal Links**: Point to your previous Photoshop AI or Midjourney articles.  
-- **Image Alt Text**: e.g., “Firefly mobile Generative Fill demo on iPhone.”  
-- **Schema**: Use `SoftwareApplication` markup with `applicationCategory: "Multimedia"` for better SERP rich snippets.
-
 ## Conclusion   
 **Firefly Mobile** nails the sweet spot between playful prompt-crafting and professional asset generation. Its credit system keeps the free tier open to everyone, while power users can scale up without hitting a hard paywall. Add robust Creative Cloud sync, multi-model flexibility, and a roadmap full of AR and 3D goodies, and Adobe’s pocket AI studio looks ready to dominate the mobile creative space.
 
