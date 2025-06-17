@@ -14,8 +14,8 @@ permalink: /2025/06/17/iphone-17-release-specs-price/
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/2K8YQ1wZN3g"
-    title="iPhone 17 Rumors & Leaks – Everything You Need to Know"
+    src="https://www.youtube.com/embed/Ghmw1xzASY0"
+    title="Everything We Know About iPhone 17 (Rumors & Leaks)"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -24,51 +24,51 @@ permalink: /2025/06/17/iphone-17-release-specs-price/
 
 <!--more-->
 
-# iPhone 17 at a Glance — Why This Upgrade Will Matter  
+# iPhone 17 at a Glance — Why This Upgrade Will Matter
 
 Apple’s iPhone 17 is shaping up to be its most AI-driven update yet. Expect an **A18 Bionic** chip fused with Apple Intelligence optimizations, a new **periscope telephoto camera** for true optical zoom, and **Dynamic Island 2.0** widgets that finally make your lock screen feel alive. If you crave a smarter camera and longer battery life, this could be the year to upgrade.
 
 ---
 
-## Release Date & Pricing  
+## Release Date & Pricing
 
-| Model               | Expected Launch         | US Price (rumor)       |
-|---------------------|-------------------------|------------------------|
-| **iPhone 17**       | Mid-September 2025      | **$799** (128 GB)      |
-| **iPhone 17 Plus**  | Mid-September 2025      | **$899** (256 GB)      |
-| **iPhone 17 Pro**   | Mid-September 2025      | **$1,099** (256 GB)    |
-| **iPhone 17 Max**   | Mid-September 2025      | **$1,299** (512 GB)    |
+| Model              | Expected Launch    | US Price (rumor)    |
+|--------------------|--------------------|---------------------|
+| **iPhone 17**      | Mid-Sept 2025      | **$799** (128 GB)   |
+| **iPhone 17 Plus** | Mid-Sept 2025      | **$899** (256 GB)   |
+| **iPhone 17 Pro**  | Mid-Sept 2025      | **$1,099** (256 GB) |
+| **iPhone 17 Max**  | Mid-Sept 2025      | **$1,299** (512 GB) |
 
-Pre-order typically opens a week before launch, with carrier trade-in deals knocking up to $200 off.
-
----
-
-## Specs Snapshot  
-
-| Component          | iPhone 17 / 17 Plus       | iPhone 17 Pro / Max         |
-|--------------------|---------------------------|-----------------------------|
-| **Chipset**        | A18 Bionic (4 nm)         | A18 Pro (4 nm, 6-core GPU)  |
-| **Display**        | 6.1″ / 6.7″ 120 Hz LTPO   | 6.1″ / 6.7″ 120 Hz LTPO OLED|
-| **RAM**            | 8 GB                      | 12 GB                       |
-| **Storage**        | 128 GB, 256 GB            | 256 GB, 512 GB, 1 TB        |
-| **Main Camera**    | 48 MP wide + 12 MP ultra  | 48 MP wide + 48 MP tele + 12 MP ultra |
-| **Periscope Zoom** | —                         | 5× optical (Max only)       |
-| **Front Camera**   | 12 MP TrueDepth           | 12 MP TrueDepth + autofocus |
-| **Battery**        | +10% capacity vs iPhone 16| +15% capacity vs iPhone 16  |
-| **Charging**       | 20 W wired · 15 W MagSafe | 27 W wired · 15 W MagSafe   |
-| **OS**             | iOS 19                     | iOS 19                       |
+Pre-orders typically open a week before launch, with carrier trade-in deals knocking up to $200 off.
 
 ---
 
-## Design & Dynamic Island 2.0  
+## Specs Snapshot
 
-The iPhone 17 series keeps the familiar flat-edge silhouette but refines it with a slightly thinner bezel and a matte-glass back on Pro models. **Dynamic Island 2.0** supports interactive widgets—live weather, smart-home controls, and even fitness rings—right from the lock screen without unlocking your phone.
+| Component         | iPhone 17 / 17 Plus         | iPhone 17 Pro / Max            |
+|-------------------|-----------------------------|--------------------------------|
+| **Chipset**       | A18 Bionic (4 nm)           | A18 Pro (4 nm, 6-core GPU)     |
+| **Display**       | 6.1″ / 6.7″ 120 Hz LTPO      | 6.1″ / 6.7″ 120 Hz LTPO OLED    |
+| **RAM**           | 8 GB                        | 12 GB                          |
+| **Storage**       | 128 GB, 256 GB              | 256 GB, 512 GB, 1 TB            |
+| **Main Camera**   | 48 MP wide + 12 MP ultra     | 48 MP wide + 48 MP tele + 12 MP ultra |
+| **Periscope Zoom**| —                           | 5× optical (Max only)          |
+| **Front Camera**  | 12 MP TrueDepth             | 12 MP TrueDepth + autofocus    |
+| **Battery**       | +10% vs iPhone 16           | +15% vs iPhone 16              |
+| **Charging**      | 20 W wired · 15 W MagSafe   | 27 W wired · 15 W MagSafe      |
+| **OS**            | iOS 19                      | iOS 19                         |
 
 ---
 
-## Camera & Computational Photography  
+## Design & Dynamic Island 2.0
 
-Apple’s big camera push includes a **periscope telephoto** on the Max model, delivering up to **5× true optical zoom**. Combined with the upgraded 48 MP sensor and a faster ƒ/1.6 aperture, low-light shots look cleaner. New **AI Night Mode** uses machine learning to stack frames faster and reveal detail in shadows. Cinematic Mode now records in **4K 60 fps** with real-time subject tracking.
+The iPhone 17 series keeps the familiar flat-edge silhouette but refines it with slightly thinner bezels and a matte-glass back on Pro models. **Dynamic Island 2.0** supports interactive widgets—live weather, smart-home controls, and fitness rings—right from the lock screen without unlocking your phone.
+
+---
+
+## Camera & Computational Photography
+
+Apple’s big camera push includes a **periscope telephoto** on the Max model, delivering up to **5× true optical zoom**. Combined with the upgraded 48 MP sensor and faster ƒ/1.6 aperture, low-light shots look cleaner than ever. New **AI Night Mode** uses machine learning to stack frames faster and reveal detail in shadows. **Cinematic Mode** now records in **4K 60 fps** with real-time subject tracking.
 
 ---
 
@@ -77,8 +77,8 @@ Apple’s big camera push includes a **periscope telephoto** on the Max model, d
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/uaZ1p2NZ9Zk"
-    title="iPhone 17 Pro Max Camera Test & Hands-On Leaks"
+    src="https://www.youtube.com/embed/NXGkvW6NIg4"
+    title="iPhone 17 Pro Max Camera & Hands-On Leaks"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -87,14 +87,14 @@ Apple’s big camera push includes a **periscope telephoto** on the Max model, d
 
 ---
 
-## Battery, Charging & Performance  
+## Battery, Charging & Performance
 
-The more efficient A18 Pro chip promises **20 percent faster** CPU and **30 percent faster** GPU than last year, while battery boosts deliver an extra **2 hours of video playback** on Pro Max. **MagSafe** accessories gain new **Smart Battery** packs with Qi-2 support and smarter charge management via iOS 19.
+The more efficient A18 Pro chip promises **20% faster** CPU and **30% faster** GPU than last year, while larger batteries deliver an extra **2 hours of video playback** on the Pro Max. **MagSafe** accessories gain new **Smart Battery** packs with Qi-2 support and smarter charge management via iOS 19.
 
 ---
 
-## Early Verdict  
+## Early Verdict
 
-If the rumors hold, the iPhone 17 series will be the iPhone to buy for mobile photography and AI-powered conveniences. The Pro Max’s periscope lens could finally dethrone dedicated compact zoom cameras, and Dynamic Island 2.0 will make everyday interactions feel magical. Mark your calendar for September—you won’t want to miss this upgrade.
+If the rumors hold, the iPhone 17 series will be the model to buy for mobile photography and AI-powered conveniences. The Pro Max’s periscope lens could finally dethrone dedicated compact zoom cameras, and Dynamic Island 2.0 will make everyday interactions feel magical. Mark your calendar for September—you won’t want to miss this upgrade.
 
-**Question for readers:** Which model are you eyeing — the base iPhone 17 for value, or the Pro Max for that periscope zoom? Let me know below!
+**Question for readers:** Which model are you eyeing—value-focused iPhone 17 or periscope-packed Pro Max? Let me know below!
