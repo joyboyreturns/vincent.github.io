@@ -15,8 +15,8 @@ permalink: /2025/06/17/windows-hello-not-working-dark/
 <div class="video-embed">
   <iframe
     width="560" height="315"
-    src="https://www.youtube.com/embed/8sv8ddGr4f4"
-    title="Windows Hello Face Unlock No Longer Works in the Dark"
+    src="https://www.youtube.com/embed/G2llb4T6Y5Q"
+    title="Windows Hello Face Recognition Degraded in Low Light"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -50,8 +50,8 @@ Previously, Hello relied on IR sensors alone to map your face in low light. Now,
 <div class="video-embed">
   <iframe
     width="560" height="315"
-    src="https://www.youtube.com/embed/28Y2VnA09Y0"
-    title="It's a Feature, Not a Bug: Windows Hello Dark Mode Explained"
+    src="https://www.youtube.com/embed/2oG7WJTWzRg"
+    title="How to Fix Windows Hello Face Recognition Not Working"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -83,3 +83,5 @@ Microsoft hasn’t committed to restoring true dark-room support, but possibilit
 Windows Hello’s shift underscores the ongoing balance between convenience and security. For now, simple workarounds like disabling the webcam or adding ambient light will keep face unlock usable in the dark. Keep your system updated and watch for future enhancements that may bring back the best of both worlds.
 
 *Question for you:* How will you adapt—lamp, IR-only camera, or PIN? Share your approach in the comments!
+
+---
