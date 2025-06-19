@@ -16,8 +16,8 @@ permalink: /2025/06/18/windows-10-end-of-support-upgrade-windows-11/
 <div class="video-embed">
   <iframe
     width="560" height="315"
-    src="https://www.youtube.com/embed/yGaKQ2Z6c1I"
-    title="Windows 10 End of Support: What You Need to Know"
+    src="https://www.youtube.com/embed/kBc3POYSuAk"
+    title="Should I Update to Windows 11? (May 2025 Update)"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -30,56 +30,91 @@ permalink: /2025/06/18/windows-10-end-of-support-upgrade-windows-11/
 
 - **Mainstream support** ended in 2020; only security and reliability patches have shipped since then.  
 - **Final free update**: Version 22H2 is the last Windows 10 release; no new features are planned.  
-- **End of support date**: October 14, 2025 for Home and Pro editions. After that, no free patches arrive through Windows Update.  
+- **End of support date**: October 14, 2025, for Home and Pro editions—no more free patches via Windows Update. :contentReference[oaicite:0]{index=0}  
 
 ### LTSC & IoT Exceptions  
-Long-Term Servicing Channel (LTSC) builds keep patching until 2027 (Enterprise LTSC 2021) or 2032 (IoT LTSC 2021), offering niche lifelines for kiosks and medical gear.  
+Long-Term Servicing Channel (LTSC) builds continue to receive updates until 2027 (Enterprise LTSC 2021) or 2032 (IoT LTSC 2021), giving specialized devices a longer safety net. :contentReference[oaicite:1]{index=1}
+
+---
 
 ## 2. Extended Security Updates (ESU)  
 
 | Year       | Home / Pro Price*         | Enterprise Price*      | Duration                |
 |------------|---------------------------|------------------------|-------------------------|
-| 1 (2025–26)| ~$30–$61 per device       | Volume-license only    | Oct 2025 → Oct 2026     |
-| 2 (2026–27)| ~$122 per device          | Scales likewise       | Oct 2026 → Oct 2027     |
+| 1 (2025–26)| ~$30 per device           | Volume-license only    | Oct 2025 → Oct 2026     |
+| 2 (2026–27)| ~$122 per device          | Scales likewise        | Oct 2026 → Oct 2027     |
 | 3 (2027–28)| ~$183 per device          | —                      | Oct 2027 → Oct 2028     |
 
-\*Based on Microsoft guidance and prior ESU pricing trends. ESU buys three more years of critical security fixes, but no new features or quality-of-life updates.
+\*Based on Microsoft guidance; ESU provides security fixes only, no new features. :contentReference[oaicite:2]{index=2}
+
+---
 
 ## 3. Windows 11 in 2025  
 
 ### Hardware Requirements  
-- **CPU**: 8th-gen Intel Core, 2nd-gen AMD Ryzen, or newer.  
-- **TPM 2.0 & Secure Boot**: Mandatory for built-in ransomware and credential-guard protection.  
+- **CPU**: 8th‑gen Intel Core, 2nd‑gen AMD Ryzen, or newer  
+- **TPM 2.0 & Secure Boot**: Now mandatory for built‑in security features :contentReference[oaicite:3]{index=3}  
 
 ### New Features Since Launch  
-- **Copilot Vision & AI Actions** offer context-aware assistance directly inside File Explorer and other apps.  
-- **24H2 update** adds Wi-Fi 7, Sudo in the command line, and a hibernation-free Fast Boot on Copilot+ PCs.  
+- **Copilot Vision & AI Actions** in File Explorer  
+- **24H2 update**: Wi‑Fi 7 support, Sudo in CLI, hibernation‑free Fast Boot on Copilot+ PCs :contentReference[oaicite:4]{index=4}  
 
 ### Market Share  
-Windows 10 still leads at around 53%, but Windows 11 crossed the 40% mark in mid-2025 and is climbing steadily.
+Windows 10 still leads at ~53%, while Windows 11 passed 40% adoption by mid‑2025. :contentReference[oaicite:5]{index=5}
+
+---
 
 ## 4. Upgrade Pros & Cons  
 
-| Consideration        | Upgrade to Windows 11                     | Stay on Windows 10 + ESU             |
-|----------------------|-------------------------------------------|--------------------------------------|
-| **Security**         | Free patches until at least 2031; hardware protections | Pay for ESU; limited to critical fixes |
-| **Features**         | Copilot AI, Snap Layouts, HDR auto-optimisation, Dynamic Lighting | Mature, stable UI; no new features  |
-| **Performance**      | Optimised scheduler for hybrid CPUs; battery gains on new laptops | Consistent performance on older gear |
-| **Hardware Cost**    | Free in-place upgrade if PC meets requirements | No hardware change required         |
-| **Future-proofing**  | 6+ years of support                       | 1–3 years of paid security only      |
+| Consideration        | Windows 11                                       | Staying on Windows 10 + ESU                   |
+|----------------------|--------------------------------------------------|------------------------------------------------|
+| **Security**         | Free patches until ~2031 + hardware protections  | Pay for ESU; only critical fixes              |
+| **Features**         | AI tools, Snap Layouts, HDR, Copilot integrated  | Stable UI; no new features                    |
+| **Performance**      | Hybrid CPU optimizations, battery gains          | Consistent performance on older hardware      |
+| **Hardware Cost**    | Free upgrade if PC meets requirements            | No hardware changes required                  |
+| **Future‑proofing**  | 6+ years of support                              | 1–3 years of paid support                     |
+
+---
 
 ## 5. Should You Upgrade?  
 
 ### Upgrade Now If…  
-- Your PC shows “Ready for Windows 11” in Windows Update.  
-- You rely on cloud services, AI tools, or multiple monitors—Windows 11 handles these better.  
-- You plan to keep the same hardware through 2030.  
+- Your PC is flagged “Ready for Windows 11”  
+- You use cloud services, AI, gaming, or multi‑monitor setups  
+- You plan to keep your PC through 2030  
 
 ### Wait or Use ESU If…  
-- Your CPU lacks TPM 2.0 or is pre-2018 and runs mission-critical legacy software.  
-- You’re budgeting for a hardware refresh in late 2026.  
-- Your organization needs time to test apps under Windows 11.
+- Your CPU lacks TPM 2.0 or is pre‑2018  
+- You have legacy or business‑critical apps  
+- You plan a hardware refresh by late 2026  
 
-## 6. Conclusion  
-Microsoft’s ticking clock gives Windows 10 users 16 months of free peace before security updates cost money. For most home users and many small businesses with compatible hardware, upgrading to Windows 11 now avoids ESU fees, unlocks modern protections, and positions you for upcoming AI-centric features. Those on older PCs can squeeze an extra year or two out of ESU, but should budget for new hardware or a move to Windows 11 before 2028.
-  
+---
+
+<!-- Mid-post video -->
+<div class="video-embed">
+  <iframe
+    width="560" height="315"
+    src="https://www.youtube.com/embed/q1cZmtlh324"
+    title="Still Using Windows 10? Do This BEFORE October 2025"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
+
+## 6. Broader Context & Alternatives  
+
+- Roughly **400 million PCs** may be unable to upgrade, risking e‑waste and security exposure. :contentReference[oaicite:6]{index=6}  
+- **LTSC version** offers support until 2032 but is aimed at enterprise and embedded use. :contentReference[oaicite:7]{index=7}  
+- Alternatives include **ChromeOS Flex** or user‑friendly **Linux distros** for repurposing older hardware. :contentReference[oaicite:8]{index=8}
+
+---
+
+## 7. Conclusion  
+Windows 10 users have about **16 months** before free updates end. Upgrading to Windows 11 if hardware supports it avoids ESU costs, boosts security, and enables modern features. If you’re on older or unsupported hardware, ESU or alternative OSs like LTSC, ChromeOS, or Linux offer temporary reprieve—just be ready to transition by 2028.
+
+*Have concerns, plans, or clever workarounds? Share your view below!*
+
+---
